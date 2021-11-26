@@ -1,0 +1,41 @@
+/* ADDITIONAL FONTAWESOME 4 STYLES */
+
+.fa-xs {
+    font-size: .75em;
+}
+
+.fa-sm {
+    font-size: .875em;
+}
+
+.fa-6x {
+    font-size: 6em;
+}
+
+.fa-7x {
+    font-size: 7em;
+}
+
+.fa-8x {
+    font-size: 8em;
+}
+
+.fa-9x {
+    font-size: 9em;
+}
+
+.fa-10x {
+    font-size: 10em;
+}
+
+.fa-flip-both, .fa-flip-horizontal.fa-flip-vertical {
+    -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+    -webkit-transform: scale(-1, -1);
+    transform: scale(-1, -1);
+}
+
+/* Added to support rotateBy */
+.fa-rotate-by {
+    -webkit-transform: rotate(var(--fa-rotate-angle, 0));
+    transform: rotate(var(--fa-rotate-angle, 0));
+}

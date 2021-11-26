@@ -1,0 +1,496 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+article, header, section, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+    display: block;
+}
+
+body {
+    background: #f0e8e8 none repeat scroll 0 0;
+    color: #222;
+    font-family: "Raleway", sans-serif;
+    font-size: 100%;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+
+}
+
+a {
+    font-family: "Raleway", sans-serif;
+    text-decoration: none;
+    outline: none;
+}
+
+a:hover, a:focus {
+    color: #373e18;
+}
+
+section {
+    float: left;
+    width: 100%;
+    margin-top: 3em;
+    margin-bottom: 2em;
+}
+
+h2 {
+    color: #1a0e0e;
+    font-size: 26px;
+    font-weight: 700;
+    margin: 0;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+h2 span {
+    display: block;
+    padding: 0;
+    font-size: 18px;
+    opacity: 0.7;
+    margin-top: 5px;
+    text-transform: uppercase;
+}
+
+#float-right {
+    float: right;
+}
+
+/* ******************************************************
+	Header
+*********************************************************/
+
+/* Header*/
+.demo-app-header {
+    float: left;
+    width: 100%;
+    padding-top: 3em;
+}
+
+.rt-heading {
+    border-bottom: solid 1px #1c7ed6;
+    padding-bottom: 10px;
+    margin: 0 auto;
+}
+
+.demo-app-header h1 {
+    color: #1c7ed6;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+    line-height: normal;
+    text-align: center;
+}
+
+.demo-app-header h2 {
+    color: #1c7ed6;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 5px 0 0;
+    line-height: normal;
+    text-align: center;
+}
+
+.demo-app-header h1 span {
+    display: block;
+    padding: 0;
+    font-size: 22px;
+    opacity: 0.7;
+    margin-top: 5px;
+    text-transform: uppercase;
+}
+
+.demo-app-header span {
+    display: block;
+    padding: 0;
+    font-size: 22px;
+    opacity: 0.7;
+    margin-top: 5px;
+}
+
+.demo-section {
+    display: flex;
+}
+
+
+.demo-section .external-link {
+    align-self: center;
+    padding-left: 10px;
+    color: darkgrey;
+}
+
+/*
+********************************************************
+	Responsive Grids
+********************************************************
+*/
+
+.rt-container {
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.rt-row:before, .rt-row:after {
+    display: table;
+    line-height: 0;
+    content: "";
+}
+
+.rt-row:after {
+    clear: both;
+}
+
+[class^="col-rt-"] {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    padding: 0 15px;
+    min-height: 1px;
+    position: relative;
+}
+
+
+@media (min-width: 768px) {
+    [class^="col-rt-"] {
+        float: left;
+        width: 49.9999999999%;
+    }
+
+    .col-rt-6, .col-rt-12 {
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .col-rt-1 {
+        width: 16.6%;
+    }
+
+    .col-rt-2 {
+        width: 30.33%;
+    }
+
+    .col-rt-3 {
+        width: 50%;
+    }
+
+    .col-rt-4 {
+        width: 67.664%;
+    }
+
+    .col-rt-5 {
+        width: 83.33%;
+    }
+}
+
+@media only screen and (min-width: 240px) and (max-width: 768px) {
+    .demo-app-header h1,
+    .demo-app-header h2,
+    .scriptnav ul {
+        text-align: center;
+    }
+
+    .scriptnav ul {
+        margin-top: 12px;
+    }
+
+    #float-right {
+        float: none;
+    }
+}
+
+body {
+    font-family: 'Helvetica', sans-serif;
+    background-color: #e7e7e7;
+    color: #777;
+    font-weight: 300;
+}
+
+.container {
+    margin: 0 auto;
+    display: block;
+    max-width: 800px;
+}
+
+.container > *:not(.tab-wrap) {
+    padding: 0 80px;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* TABS */
+
+.tab-wrap {
+    -webkit-transition: 0.3s box-shadow ease;
+    transition: 0.3s box-shadow ease;
+    border-radius: 6px;
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    position: relative;
+    list-style: none;
+    background-color: #fff;
+    margin: 40px 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.tab-wrap:hover {
+    box-shadow: 0 12px 23px rgba(0, 0, 0, 0.23), 0 10px 10px rgba(0, 0, 0, 0.19);
+}
+
+.tab {
+    display: none;
+}
+
+.tab:checked:nth-of-type(1) ~ .tab__content:nth-of-type(1) {
+    opacity: 1;
+    -webkit-transition: 0.5s opacity ease-in, 0.8s -webkit-transform ease;
+    transition: 0.5s opacity ease-in, 0.8s -webkit-transform ease;
+    transition: 0.5s opacity ease-in, 0.8s transform ease;
+    transition: 0.5s opacity ease-in, 0.8s transform ease, 0.8s -webkit-transform ease;
+    position: relative;
+    top: 0;
+    z-index: 100;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    text-shadow: 0 0 0;
+}
+
+.tab:checked:nth-of-type(2) ~ .tab__content:nth-of-type(2) {
+    opacity: 1;
+    -webkit-transition: 0.5s opacity ease-in, 0.8s -webkit-transform ease;
+    transition: 0.5s opacity ease-in, 0.8s -webkit-transform ease;
+    transition: 0.5s opacity ease-in, 0.8s transform ease;
+    transition: 0.5s opacity ease-in, 0.8s transform ease, 0.8s -webkit-transform ease;
+    position: relative;
+    top: 0;
+    z-index: 100;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    text-shadow: 0 0 0;
+}
+
+.tab:checked:nth-of-type(3) ~ .tab__content:nth-of-type(3) {
+    opacity: 1;
+    -webkit-transition: 0.5s opacity ease-in, 0.8s -webkit-transform ease;
+    transition: 0.5s opacity ease-in, 0.8s -webkit-transform ease;
+    transition: 0.5s opacity ease-in, 0.8s transform ease;
+    transition: 0.5s opacity ease-in, 0.8s transform ease, 0.8s -webkit-transform ease;
+    position: relative;
+    top: 0;
+    z-index: 100;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    text-shadow: 0 0 0;
+}
+
+.tab:checked:nth-of-type(4) ~ .tab__content:nth-of-type(4) {
+    opacity: 1;
+    -webkit-transition: 0.5s opacity ease-in, 0.8s -webkit-transform ease;
+    transition: 0.5s opacity ease-in, 0.8s -webkit-transform ease;
+    transition: 0.5s opacity ease-in, 0.8s transform ease;
+    transition: 0.5s opacity ease-in, 0.8s transform ease, 0.8s -webkit-transform ease;
+    position: relative;
+    top: 0;
+    z-index: 100;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    text-shadow: 0 0 0;
+}
+
+.tab:checked:nth-of-type(5) ~ .tab__content:nth-of-type(5) {
+    opacity: 1;
+    -webkit-transition: 0.5s opacity ease-in, 0.8s -webkit-transform ease;
+    transition: 0.5s opacity ease-in, 0.8s -webkit-transform ease;
+    transition: 0.5s opacity ease-in, 0.8s transform ease;
+    transition: 0.5s opacity ease-in, 0.8s transform ease, 0.8s -webkit-transform ease;
+    position: relative;
+    top: 0;
+    z-index: 100;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    text-shadow: 0 0 0;
+}
+
+.tab:first-of-type:not(:last-of-type) + label {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.tab:not(:first-of-type):not(:last-of-type) + label {
+    border-radius: 0;
+}
+
+.tab:last-of-type:not(:first-of-type) + label {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.tab:checked + label {
+    background-color: #fff;
+    box-shadow: 0 -1px 0 #fff inset;
+    cursor: default;
+}
+
+.tab:checked + label:hover {
+    box-shadow: 0 -1px 0 #fff inset;
+    background-color: #fff;
+}
+
+.tab + label {
+    box-shadow: 0 -1px 0 #eee inset;
+    border-radius: 6px 6px 0 0;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    color: #333;
+    -webkit-box-flex: 3;
+    -ms-flex-positive: 3;
+    flex-grow: 3;
+    text-align: center;
+    background-color: #f2f2f2;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: center;
+    -webkit-transition: 0.3s background-color ease, 0.3s box-shadow ease;
+    transition: 0.3s background-color ease, 0.3s box-shadow ease;
+    height: 50px;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.tab + label:hover {
+    background-color: #f9f9f9;
+    box-shadow: 0 1px 0 #f4f4f4 inset;
+}
+
+.tab__content {
+    padding: 10px 25px;
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    opacity: 0;
+    left: 0;
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+    border-radius: 6px;
+}
+
+/* Document */
+
+.show-off {
+    padding: 1rem;
+    color: #000;
+    background-color: #fff;
+    border-radius: .25rem;
+    border-color: #f1f3f5;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.docs-generated > .table-wrap {
+    width: 100%;
+    overflow: auto;
+    margin-bottom: 1.5rem
+}
+
+.docs-generated table {
+    width: 100%;
+    display: table;
+    border-collapse: collapse;
+    border-spacing: 0;
+    background: #fff
+}
+
+.docs-generated table thead tr {
+    text-align: left
+}
+
+.docs-generated table th {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #f1f3f5;
+    padding: 1rem;
+    font-weight: bold
+}
+
+.docs-generated table tr {
+    text-align: left
+}
+
+.docs-generated table td {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #f1f3f5;
+    padding: 1rem
+}
+
+.docs-generated code.inline {
+    display: inline;
+    margin-left: .25rem;
+    margin-right: .25rem;
+    white-space: nowrap;
+}
+
+.docs-generated code {
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+    font-size: 0.9rem;
+    color: #ff922b;
+}
+
+.text-left,
+.align-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.demo-group {
+    display: flex;
+}
+
+.demo-item {
+    display: grid;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.text-muted {
+    color: #b3b3b3;
+}
+
+i[fa] {
+    margin-right: 20px;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+
+.no-margin {
+    margin: 0 !important;
+}
+
+.no-margin pre.hljs {
+    margin: 0 !important;
+}
