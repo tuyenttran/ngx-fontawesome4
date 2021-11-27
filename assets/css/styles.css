@@ -479,7 +479,11 @@ p {
     color: #b3b3b3;
 }
 
-i[fa] {
+.cheatsheet {
+    font-size: 1.5rem;
+}
+
+.cheatsheet i[fa] {
     margin-right: 20px;
 }
 
