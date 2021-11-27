@@ -7,7 +7,7 @@ addons:
     - dpkg
 language: node_js
 node_js:
-- 8
+- 9
 branches:
   except:
   - main
@@ -31,7 +31,7 @@ script:
 - npm run build-ghpages
 after_success:
 - if [ "$TRAVIS_BRANCH" == "master" -a "$TRAVIS_PULL_REQUEST" == "false" ] ; then
-  angular-cli-ghpages --dir="dist-ghpages" --no-silent --repo="https://${GH_TOKEN}@github.com/tuyenttran/ngx-fontawesome.git"
+  angular-cli-ghpages --dir="dist-ghpages" --no-silent --repo="https://${GH_TOKEN}@github.com/tuyenttran/ngx-fontawesome4.git"
   --name="tuyenttran" --email="anhtuyen.tran@gmail.com"; fi
 before_deploy:
 - cd dist/@ui4ngx/fontawesome4/

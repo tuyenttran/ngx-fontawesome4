@@ -19,6 +19,7 @@ export class NgxIconComponent implements OnChanges {
     @Input() name: string;              // icon name -> fa-${name}
     @Input() cssClass: string;          // additional CSS class
     @Input() title: string;             // title
+    @Input() alt: string;               // text alternative to support screen reader
     @Input() scale: number;             // [1-10] -> fa-[1x|2x|..|10x]
     @Input() size: string;              // [lg|sm|xs] -> fa-[lg|sm|xs]
     @Input() stack: number;             // [1-2] -> fa-stack-[1|2]x
@@ -49,7 +50,7 @@ export class NgxIconComponent implements OnChanges {
     // Public Methods
     // -------------------------------------------------------------------------
 
-    ngOnChanges(changes: { [propertyName: string]: SimpleChange }) {
+    ngOnChanges(changes: { [propertyName: string]: SimpleChange }): void {
         if (!changes) {
             return;
         }

@@ -65,10 +65,12 @@ export class AppModule { }
 Name      | Type               | Options                                   | Optional
 ---       | ---                | ---                                       | ---
 name      | `String`           | Icon [Name](http://fontawesome.io/icons/) | No
+title     | `String`           | Tooltip to display when hovered           | Yes
+alt       | `String`           | Text alternative to support screen reader | Yes
 animation | `String`           | `spin, pulse`                             | Yes
 cssClass  | `String`           | Additional CSS classes                    | Yes
 pull      | `String`           | `left, right`                             | Yes
-scale     | `Number`           | `1 - 10`                                  | Yes
+scale     | `Number`           | `2 - 10`                                  | Yes
 size      | `String`           | `lg, sm, xs`                              | Yes
 stack     | `Number`           | `1,2`                                     | Yes
 rotate    | `Number`           | `90, 180, 270`                            | Yes
@@ -84,9 +86,11 @@ inverse   | `Boolean`          | `true, false`                             | Yes
 
 ```html
 <fa     name="..."
+        title="..."
+        alt="..."
         cssClass="..."
         pull="left|right"
-        scale="1|2|3|4|5|6|7|8|9|10"
+        scale="2|3|4|5|6|7|8|9|10"
         size="xs|sm|lg"
         stack="1|2"
         rotate="90|180|270"
@@ -104,9 +108,11 @@ inverse   | `Boolean`          | `true, false`                             | Yes
 
 ```html
 <i fa   name="..."
+        title="..."
+        alt="..."
         cssClass="..."
         pull="left|right"
-        scale="1|2|3|4|5|6|7|8|9|10"
+        scale="2|3|4|5|6|7|8|9|10"
         size="xs|sm|lg"
         stack="1|2"
         rotate="90|180|270"

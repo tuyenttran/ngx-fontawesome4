@@ -27,7 +27,7 @@
                 <!-- FEATURES -->
                 <div class="tab__content">
 
-                    <!-- WEB-FONT SIZING -->
+                    <!-- SIZING & SCALING -->
                     <div class="demo-section">
                         <h3>Sizing & Scaling Icons</h3>
                         <a class="external-link"
@@ -120,15 +120,15 @@
                                     <code class="inline">fa-4x</code>
                                     <code class="inline">fa-5x</code>
                                 </td>
-                                <td class="align-left">1..10</td>
-                                <td class="align-left"><code class="inline">scale="1..10"</code>
+                                <td class="align-left">2..10</td>
+                                <td class="align-left"><code class="inline">scale="2..10"</code>
                                 </td>
                             </tr>
                             </tbody>
                         </table>
                     </div>
                     <br />
-                    <!-- WEB-FONT FIXED-WIDTH -->
+                    <!-- FIXED-WIDTH -->
                     <div class="demo-section">
                         <h3>Fixed Width Icons</h3>
                         <a class="external-link"
@@ -194,7 +194,7 @@
                         </div>
                     </div>
 
-                    <!-- WEB-FONT ROTATING -->
+                    <!-- ROTATING -->
                     <div class="demo-section">
                         <h3>Rotating Icons</h3>
                         <a class="external-link"
@@ -486,6 +486,7 @@
                         </table>
                     </div>
                     <br />
+
                     <!-- BORDERED & PULLED -->
                     <div class="demo-section">
                         <h3>Bordered + Pulled Icons</h3>
@@ -592,6 +593,7 @@ And one fine morning — So we beat on, boats against the current, borne back ce
                         </table>
                     </div>
                     <br />
+
                     <!-- STACKING -->
                     <div class="demo-section">
                         <h3>Stacking Icons</h3>
@@ -613,7 +615,6 @@ And one fine morning — So we beat on, boats against the current, borne back ce
                         stack.</p>
                     <p>The size of the stack can be adjusted by setting the size of the container element.</p>
                     <p>The order of the icons in the container reflects the order of stack.</p>
-
                     <div class="show-off">
                         <span class="fa-stack fa-2x">
                             <fa name="square" stack="2"></fa>
@@ -757,6 +758,53 @@ And one fine morning — So we beat on, boats against the current, borne back ce
                             </textarea>
                         </div>
                     </div>
+
+                    <!-- ACCESSIBILITY -->
+                    <div class="demo-section">
+                        <h4>Accessibility</h4>
+                    </div>
+                    <p>Set the attribute <code class="inline">alt</code> to add text alternative for screen reader.</p>
+                    <p>Set the attribute <code class="inline">title</code> to add tooltip text when hovered.</p>
+                    <div class="show-off">
+                        <fa name="twitter" scale="2" title="Click here to go to your Twitter account"></fa>
+                        <i fa name="facebook-square" scale="2" title="Click here to go to your FaceBook account"></i>
+                        <fa name="github" scale="2" alt="Screen reader will read out loud that this is GitHub"></fa>
+                        <i fa name="gitlab" scale="2" alt="Screen reader will read out loud that this is GitLab"></i>
+                    </div>
+                    <div class="tab-wrap">
+                        <input type="radio" id="tab-accessibility-1" name="tab-group-accessibility" class="tab">
+                        <label for="tab-accessibility-1">Font Awesome</label>
+
+                        <input type="radio" id="tab-accessibility-2" name="tab-group-accessibility" class="tab" checked>
+                        <label for="tab-accessibility-2">Angular</label>
+
+                        <div class="tab__content">
+                            <textarea highlight-js lang="html" mode="default">
+<i class="fa fa-twitter fa-2x" title="Click here to go to your Twitter account"></i>
+
+<i class="fa fa-facebook-square fa-2x" title="Click here to go to your FaceBook account"></i>
+
+<i class="fa fa-github fa-2x"></i>
+<span class="fa-sr-only">Screen reader will read out loud that this is GitHub</span>
+
+<i class="fa fa-gitlab fa-2x"></i>
+<span class="fa-sr-only">Screen reader will read out loud that this is GitLab</span>
+                            </textarea>
+                        </div>
+
+                        <div class="tab__content">
+                            <textarea highlight-js lang="html" mode="default">
+<fa name="twitter" scale="2" title="Click here to go to your Twitter account"></fa>
+
+<i fa name="facebook-square" scale="2" title="Click here to go to your FaceBook account"></i>
+
+<fa name="github" scale="2" alt="Screen reader will read out loud that this is GitHub"></fa>
+
+<i fa name="gitlab" scale="2" alt="Screen reader will read out loud that this is GitLab"></i>
+                            </textarea>
+                        </div>
+                    </div>
+
                 </div>
 
                 <!-- CHEATSHEET -->
@@ -774,7 +822,7 @@ And one fine morning — So we beat on, boats against the current, borne back ce
                         <i fa name="..." fixedWidth="true"></i>
                     </textarea>
                     <br/><br/>
-                    <div class="rt-container" style="font-size: 1.5rem;">
+                    <div class="rt-container cheatsheet">
                         <div class="col-rt-3">
                             <small class="text-muted pull-right">4.4</small>
                             <i fa fixedWidth="true" name="500px"></i>500px
