@@ -27,11 +27,13 @@ a {
     outline: none;
 }
 
-a:hover, a:focus {
-    color: #373e18;
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
 }
 
 section {
+    position: relative;
     float: left;
     width: 100%;
     margin-top: 3em;
@@ -406,6 +408,10 @@ p {
     border-width: 1px;
 }
 
+.show-off i {
+    margin-right: 10px;
+}
+
 .docs-generated > .table-wrap {
     width: 100%;
     overflow: auto;
@@ -497,4 +503,50 @@ p {
 
 .no-margin pre.hljs {
     margin: 0 !important;
+}
+
+/** PURE CSS SMOOTH SCROLL TO TOP
+ Source: https://moderncss.dev/pure-css-smooth-scroll-back-to-top/
+ */
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+.back-to-top-wrapper {
+    position: absolute;
+    top: 100vh;
+    z-index: 10000;
+    right: 2rem;
+    bottom: -5em;
+    pointer-events: none;
+}
+
+.back-to-top-link {
+    position: fixed;
+    position: sticky;
+    pointer-events: all;
+    top: calc(100vh - 5rem);
+    display: inline-block;
+    text-decoration: none;
+    font-size: 2rem;
+    line-height: 3rem;
+    text-align: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    color: #1c7ed6;
+    border: 1px solid #1c7ed6;
+    background-color: #d6e3f0;
+    transition: transform 80ms ease-in;
+}
+.back-to-top-link:hover, .back-to-top-link:focus {
+    color: #1c7ed6;
+    transform: scale(1.1);
+}
+.back-to-top-link:focus {
+    outline: none;
+    color: #1c7ed6;
+    box-shadow: 0 0 0 3px #4e85c0;
 }

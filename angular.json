@@ -1,0 +1,102 @@
+{
+    "$schema": "./node_modules/@angular-devkit/core/src/workspace/workspace-schema.json",
+    "version": 1,
+    "newProjectRoot": "src",
+    "projects": {
+        "undefined": {
+            "root": "example",
+            "projectType": "application",
+            "architect": {
+                "build": {
+                    "builder": "@angular-devkit/build-angular:browser",
+                    "options": {
+                        "outputPath": "dist",
+                        "main": "example/main.ts",
+                        "tsConfig": "example/tsconfig.app.json",
+                        "serviceWorker": false,
+                        "index": "example/index.html",
+                        "assets": [
+                            {
+                                "glob": "**/*",
+                                "input": "example/assets",
+                                "output": "assets"
+                            },
+                            {
+                                "glob": "favicon.ico",
+                                "input": "",
+                                "output": "favicon.ico"
+                            }
+                        ],
+                        "styles": [
+                            "example/assets/css/styles.css",
+                            "node_modules/font-awesome/css/font-awesome.css",
+                            "node_modules/font-awesome-animation/css/font-awesome-animation.css",
+                            "assets/css/ngx-fontawesome.scss"
+                        ],
+                        "scripts": [],
+                        "polyfills": "example/polyfills.ts"
+                    },
+                    "configurations": {
+                        "production": {
+                            "fileReplacements": [
+                                {
+                                    "src": "example/config/environment.ts",
+                                    "replaceWith": "example/config/environment.prod.ts"
+                                }
+                            ],
+                            "optimization": true,
+                            "outputHashing": "all",
+                            "sourceMap": false,
+                            "extractCss": true,
+                            "namedChunks": false,
+                            "aot": true,
+                            "extractLicenses": true,
+                            "vendorChunk": false,
+                            "buildOptimizer": true
+                        }
+                    }
+                },
+                "test": {
+                    "builder": "@angular-devkit/build-angular:karma",
+                    "options": {
+                        "main": "example/test.ts",
+                        "polyfills": "example/polyfills.ts",
+                        "tsConfig": "example/tsconfig.spec.json",
+                        "karmaConfig": "example/karma.conf.js",
+                        "styles": [],
+                        "scripts": [],
+                        "assets": []
+                    }
+                },
+                "serve": {
+                    "builder": "@angular-devkit/build-angular:dev-server",
+                    "options": {
+                        "browserTarget": "undefined:build"
+                    },
+                    "configurations": {
+                        "production": {
+                            "browserTarget": "undefined:build:production"
+                        }
+                    }
+                },
+                "extract-i18n": {
+                    "builder": "@angular-devkit/build-angular:extract-i18n",
+                    "options": {
+                        "browserTarget": "undefined:build"
+                    }
+                },
+                "lint": {
+                    "builder": "@angular-devkit/build-angular:tslint",
+                    "options": {
+                        "tsConfig": [
+                            "example/tsconfig.app.json"
+                        ],
+                        "exclude": [
+                            "**/node_modules/**"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

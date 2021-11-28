@@ -1,6 +1,4 @@
-<br/>
-
-<header class="demo-app-header">
+<header class="demo-app-header" id="top">
     <div class="rt-container">
         <div class="col-rt-12">
             <div class="rt-heading">
@@ -710,11 +708,11 @@ And one fine morning — So we beat on, boats against the current, borne back ce
                         you’ll need to either size down the stacked icon or size up the single icons.</p>
                     <div class="show-off">
                         <fa name="circle-o" scale="2"></fa>
-                        <span class="fa-stack" style="vertical-align: top;">
+                        <span class="fa-stack" style="vertical-align: top;margin-right: 10px;">
                             <fa name="circle-o" stack="2"></fa>
                             <fa name="flag" stack="1"></fa>
                         </span>
-                        <span class="fa-stack" style="vertical-align: top;">
+                        <span class="fa-stack" style="vertical-align: top;margin-right: 10px;">
                             <fa name="circle" stack="2"></fa>
                             <fa name="flag" stack="1" inverse="true"></fa>
                         </span>
@@ -731,11 +729,11 @@ And one fine morning — So we beat on, boats against the current, borne back ce
                         <div class="tab__content">
                             <textarea highlight-js lang="html" mode="default">
 <i class="fa fa-circle-o fa-2x"></i>
-<span class="fa-stack" style="vertical-align: top;">
+<span class="fa-stack" style="vertical-align: top;;margin-right: 10px;">
   <i class="fa fa-circle-o fa-stack-2x"></i>
   <i class="fa fa-flag fa-stack-1x"></i>
 </span>
-<span class="fa-stack" style="vertical-align: top;">
+<span class="fa-stack" style="vertical-align: top;;margin-right: 10px;">
   <i class="fa fa-circle fa-stack-2x"></i>
   <i class="fa fa-flag fa-stack-1x fa-inverse"></i>
 </span>
@@ -746,11 +744,11 @@ And one fine morning — So we beat on, boats against the current, borne back ce
                         <div class="tab__content">
                             <textarea highlight-js lang="html" mode="default">
 <fa name="circle-o" scale="2"></fa>
-<span class="fa-stack" style="vertical-align: top;">
+<span class="fa-stack" style="vertical-align: top;;margin-right: 10px;">
   <fa name="circle-o" stack="2"></fa>
   <fa name="flag" stack="1"></fa>
 </span>
-<span class="fa-stack" style="vertical-align: top;">
+<span class="fa-stack" style="vertical-align: top;;margin-right: 10px;">
   <fa name="circle" stack="2"></fa>
   <fa name="flag" stack="1" inverse="true"></fa>
 </span>
@@ -767,9 +765,9 @@ And one fine morning — So we beat on, boats against the current, borne back ce
                     <p>Set the attribute <code class="inline">title</code> to add tooltip text when hovered.</p>
                     <div class="show-off">
                         <fa name="twitter" scale="2" title="Click here to go to your Twitter account"></fa>
-                        <i fa name="facebook-square" scale="2" title="Click here to go to your FaceBook account"></i>
+                        <i fa name="facebook-square" scale="2" aria-hidden="true" title="Click here to go to your FaceBook account"></i>
                         <fa name="github" scale="2" alt="Screen reader will read out loud that this is GitHub"></fa>
-                        <i fa name="gitlab" scale="2" alt="Screen reader will read out loud that this is GitLab"></i>
+                        <i fa name="gitlab" scale="2" aria-hidden="true" alt="Screen reader will read out loud that this is GitLab"></i>
                     </div>
                     <div class="tab-wrap">
                         <input type="radio" id="tab-accessibility-1" name="tab-group-accessibility" class="tab">
@@ -782,12 +780,12 @@ And one fine morning — So we beat on, boats against the current, borne back ce
                             <textarea highlight-js lang="html" mode="default">
 <i class="fa fa-twitter fa-2x" title="Click here to go to your Twitter account"></i>
 
-<i class="fa fa-facebook-square fa-2x" title="Click here to go to your FaceBook account"></i>
+<i class="fa fa-facebook-square fa-2x" aria-hidden="true" title="Click here to go to your FaceBook account"></i>
 
 <i class="fa fa-github fa-2x"></i>
 <span class="fa-sr-only">Screen reader will read out loud that this is GitHub</span>
 
-<i class="fa fa-gitlab fa-2x"></i>
+<i class="fa fa-gitlab fa-2x" aria-hidden="true"></i>
 <span class="fa-sr-only">Screen reader will read out loud that this is GitLab</span>
                             </textarea>
                         </div>
@@ -796,11 +794,11 @@ And one fine morning — So we beat on, boats against the current, borne back ce
                             <textarea highlight-js lang="html" mode="default">
 <fa name="twitter" scale="2" title="Click here to go to your Twitter account"></fa>
 
-<i fa name="facebook-square" scale="2" title="Click here to go to your FaceBook account"></i>
+<i fa name="facebook-square" scale="2" aria-hidden="true" title="Click here to go to your FaceBook account"></i>
 
 <fa name="github" scale="2" alt="Screen reader will read out loud that this is GitHub"></fa>
 
-<i fa name="gitlab" scale="2" alt="Screen reader will read out loud that this is GitLab"></i>
+<i fa name="gitlab" scale="2" aria-hidden="true" alt="Screen reader will read out loud that this is GitLab"></i>
                             </textarea>
                         </div>
                     </div>
@@ -4796,5 +4794,10 @@ And one fine morning — So we beat on, boats against the current, borne back ce
                 </div>
             </div>
         </div>
+    </div>
+    <div class="back-to-top-wrapper">
+        <a href="#top" class="back-to-top-link" title="Scroll to Top" aria-label="Scroll to Top">
+            <i fa name="arrow-up"></i>
+        </a>
     </div>
 </section>
