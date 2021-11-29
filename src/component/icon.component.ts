@@ -1,4 +1,4 @@
-import {Input, OnChanges, SimpleChange} from '@angular/core';
+import {Directive, Input, OnChanges, SimpleChange} from '@angular/core';
 import {DomSanitizer, SafeStyle} from '@angular/platform-browser';
 import {
     ANIMATION_VALUE_VALIDATOR,
@@ -10,7 +10,8 @@ import {
     STACK_VALUE_VALIDATOR
 } from './fontawesome.interface';
 
-export class NgxIconComponent implements OnChanges {
+@Directive()
+export abstract class NgxIconComponent implements OnChanges {
 
     // -------------------------------------------------------------------------
     // Input & Output
@@ -43,7 +44,7 @@ export class NgxIconComponent implements OnChanges {
     // Constructor
     // -------------------------------------------------------------------------
 
-    constructor(private _sanitizer: DomSanitizer) {
+    protected constructor(private _sanitizer: DomSanitizer) {
     }
 
     // -------------------------------------------------------------------------

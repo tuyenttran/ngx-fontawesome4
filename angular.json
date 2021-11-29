@@ -3,7 +3,12 @@
     "version": 1,
     "newProjectRoot": "src",
     "projects": {
-        "undefined": {
+        "fontawesome4-demo": {
+            "schematics": {
+                "@schematics/angular:component": {
+                    "styleext": "scss"
+                }
+            },
             "root": "example",
             "projectType": "application",
             "architect": {
@@ -71,18 +76,18 @@
                 "serve": {
                     "builder": "@angular-devkit/build-angular:dev-server",
                     "options": {
-                        "browserTarget": "undefined:build"
+                        "browserTarget": "fontawesome4-demo:build"
                     },
                     "configurations": {
                         "production": {
-                            "browserTarget": "undefined:build:production"
+                            "browserTarget": "fontawesome4-demo:build:production"
                         }
                     }
                 },
                 "extract-i18n": {
                     "builder": "@angular-devkit/build-angular:extract-i18n",
                     "options": {
-                        "browserTarget": "undefined:build"
+                        "browserTarget": "fontawesome4-demo:build"
                     }
                 },
                 "lint": {
@@ -98,5 +103,14 @@
                 }
             }
         }
+    },
+    "defaultProject": "fontawesome4-demo",
+    "schematics": {
+        "@schematics/angular:component": {
+            "styleext": "scss"
+        }
+    },
+    "cli": {
+        "analytics": false
     }
 }

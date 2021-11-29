@@ -1,8 +1,16 @@
 <header class="demo-app-header" id="top">
     <div class="rt-container">
         <div class="col-rt-12">
-            <div class="rt-heading">
-                <h1>Angular Font Awesome</h1>
+            <div class="rt-heading text-center">
+                <h1>@ui4ngx/fontawesome4</h1>
+                <a class="external-link" href="https://github.com/tuyenttran/ngx-fontawesome4/" aria-label="GitHub" target="_blank">
+                    <fa name="github" scale="2"></fa>
+                </a>
+                <a class="external-link" href="https://www.npmjs.com/package/@ui4ngx/fontawesome4" aria-label="NPM" target="_blank">
+                    <svg viewBox="0 0 780 250" style="width: 3rem;">
+                        <path fill="#1c7ed6" d="M240,250h100v-50h100V0H240V250z M340,50h50v100h-50V50z M480,0v200h100V50h50v150h50V50h50v150h50V0H480z M0,200h100V50h50v150h50V0H0V200z"></path>
+                    </svg>
+                </a>
                 <h2>Another Angular way to display FontAwesome (v4 only)</h2>
             </div>
         </div>
@@ -602,13 +610,13 @@ And one fine morning — So we beat on, boats against the current, borne back ce
                         </a>
                     </div>
                     <p><b>NOTE: </b>Stacking ONLY supports up to 2 icons. To stack more than 2 icons, use SVG icons.</p>
-                    <p>To stack icons, first, set the <code class="inline">fa-stack</code> class on the container
+                    <p>To stack icons, first, set the <code class="inline">fa-stack</code> class in the container
                         element.</p>
                     <p>Then set the attribute <code class="inline">stack="1"</code> for the small icon component</p>
                     <p>Finally, set the attribute <code class="inline">stack="2"</code> for the large icon component.
                     </p>
-                    <p>When stacking 2 solid icons, the small icon will NOT be visible.
-                        Set the attribute <code class="inline">inverse="true"</code> of the small icon to make it
+                    <p>When stacking 2 solid icons, the smaller icon will NOT be visible.
+                        Set the attribute <code class="inline">inverse="true"</code> of the smaller icon to make it
                         standout from the
                         stack.</p>
                     <p>The size of the stack can be adjusted by setting the size of the container element.</p>
@@ -4475,7 +4483,7 @@ And one fine morning — So we beat on, boats against the current, borne back ce
                         </a>
                     </div>
                     <p>You can add custom animations to Font-Awesome by using <b><a href="https://l-lin.github.io/font-awesome-animation/">font-awesome-animation</a></b> library along with <b>@ui4ngx/fontawesome4</b> library.<br/>
-                       by setting <code class="inline">cssClass</code>attribute with the animation classes
+                       Set <code class="inline">cssClass</code>attribute with the animation classes
                         (<code class="inline">animated faa-* [faa-reverse] [faa-fast] [faa-slow]</code>) to trigger the animation.
                     </p>
 
