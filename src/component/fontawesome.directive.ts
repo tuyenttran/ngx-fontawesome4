@@ -2,10 +2,9 @@
  * Created by Tuyen Tran on 7/1/2017.
  */
 
-import {Directive, ElementRef, HostBinding, Inject, OnChanges, Renderer2, SimpleChange} from '@angular/core';
+import {Directive, ElementRef, HostBinding, OnChanges, Renderer2, SimpleChange} from '@angular/core';
 import {DomSanitizer, SafeStyle} from '@angular/platform-browser';
 import {NgxIconComponent} from './icon.component';
-import {DOCUMENT} from '@angular/common';
 
 @Directive({
     selector: 'i[fa]' // <i fa ...></i>
