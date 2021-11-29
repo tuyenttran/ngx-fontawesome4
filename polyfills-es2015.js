@@ -6074,9 +6074,6 @@ __webpack_require__.r(__webpack_exports__);
  *
  * Learn more in https://angular.io/guide/browser-support
  */
-var __importDefault = (undefined && undefined.__importDefault) || function (mod) {
-  return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 /***************************************************************************************************
  * BROWSER POLYFILLS
  */
