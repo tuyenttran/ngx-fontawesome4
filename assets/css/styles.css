@@ -406,7 +406,12 @@ p {
     border-width: 1px;
 }
 
-.show-off i {
+.show-off > fa,
+.show-off > i[fa],
+.show-off > span,
+.show-off div > span,
+.show-off div > fa,
+.show-off div > i[fa] {
     margin-right: 10px;
 }
 
