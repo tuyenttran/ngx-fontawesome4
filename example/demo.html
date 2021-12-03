@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Font Awesome 4 Demo</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Oswald:700'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/css/ngx-fontawesome.css">
+</head>
+<style>
+    .rose-bg {
+        background: MistyRose;
+    }
+
+    .tomato-red {
+        color: Tomato !important;
+    }
+
+    .lightblue-bg {
+        background: SkyBlue;
+    }
+
+    .darkblue-bg {
+        background: DodgerBlue;
+    }
+
+    .text-info {
+        color: #31708f;
+    }
+
+    .text-danger {
+        color: #a94442;
+    }
+
+    .calendar-text {
+        margin-top: .3em;
+    }
+
+    .file-text {
+        margin-top: .2em;
+    }
+
+    .filetype-text {
+        font-size: .7em;
+        font-weight: 700;
+        font-family: 'Oswald';
+    }
+</style>
+<body>
+<h1>Font Awesome 4 Demo</h1>
+
+<h4>Scaling</h4>
+<div>
+    <i class="fa fa-camera fa-xs"></i>
+    <i class="fa fa-camera fa-sm"></i>
+    <i class="fa fa-camera fa-lg"></i>
+    <i class="fa fa-camera fa-2x"></i>
+    <i class="fa fa-camera fa-3x"></i>
+    <i class="fa fa-camera fa-5x"></i>
+    <i class="fa fa-camera fa-7x"></i>
+    <i class="fa fa-camera fa-10x"></i>
+</div>
+
+<h4>Fixed Width</h4>
+<div style="font-size: 2rem;">
+    <div><i class="fa fa-plane fa-fw" style="background:DodgerBlue"></i> Plane</div>
+    <div><i class="fa fa-train fa-fw" style="background:SkyBlue"></i> Train</div>
+    <div><i class="fa fa-truck fa-fw" style="background:DodgerBlue"></i> Truck</div>
+    <div><i class="fa fa-ship fa-fw" style="background:SkyBlue"></i> Ship</div>
+    <div><i class="fa fa-automobile fa-fw" style="background:DodgerBlue"></i> Car</div>
+</div>
+
+<h4>Rotating</h4>
+<div class="fa-4x">
+    <i class="fa fa-shopping-cart"></i>
+    <i class="fa fa-shopping-cart fa-rotate-90"></i>
+    <i class="fa fa-shopping-cart fa-rotate-180"></i>
+    <i class="fa fa-shopping-cart fa-rotate-270"></i>
+    <i class="fa fa-shopping-cart fa-flip-horizontal"></i>
+    <i class="fa fa-shopping-cart fa-flip-vertical"></i>
+    <i class="fa fa-shopping-cart fa-flip-vertical fa-flip-horizontal"></i>
+</div>
+
+<h4>Rotating & Flipping</h4>
+<div class="fa-4x">
+    <!-- A icon that's rotated 90 degrees and flipped horizontally -->
+    <span class="fa-rotate-90" style="display: inline-block;">
+        <i class="fa fa-shopping-cart fa-flip-horizontal"></i>
+    </span>
+    <!-- A icon that's flipped horizontally and rotated 90 degrees -->
+    <span class="fa-flip-horizontal" style="display: inline-block;">
+        <i class="fa fa-shopping-cart fa-rotate-90"></i>
+    </span>
+    <!-- A icon that's flipped vertically and rotated 270 degrees -->
+    <span class="fa-flip-vertical" style="display: inline-block;">
+        <i class="fa fa-shopping-cart fa-rotate-270"></i>
+    </span>
+    <!-- A icon that's rotated 270 degrees and flipped vertically -->
+    <span class="fa-rotate-270" style="display: inline-block;">
+        <i class="fa fa-shopping-cart fa-flip-vertical"></i>
+    </span>
+    <!-- A icon that's flipped on both axes and arbitrarily rotated 45 degrees -->
+    <span class="fa-flip-horizontal fa-flip-vertical" style="display: inline-block;">
+        <i class="fa fa-shopping-cart" style="transform: rotate(45deg);"></i>
+    </span>
+    <!-- A icon that's arbitrarily rotated 45 degrees and flipped on both axes -->
+    <span style="display: inline-block; transform: rotate(45deg);">
+        <i class="fa fa-shopping-cart fa-flip-horizontal fa-flip-vertical"></i>
+    </span>
+</div>
+
+<h4>Animating</h4>
+<div class="fa-3x">
+    <i class="fa fa-spinner fa-spin"></i>
+    <i class="fa fa-circle-o-notch fa-spin"></i>
+    <i class="fa fa-refresh fa-spin"></i>
+    <i class="fa fa-cog fa-spin"></i>
+    <i class="fa fa-spinner fa-pulse"></i>
+    <i class="fa fa-slack fa-spin"></i>
+</div>
+
+<h4>Pull</h4>
+<div>
+    <i class="fa fa-quote-left fa-2x fa-pull-left"></i>
+    Gatsby believed in the green light, the orgastic future that year by year recedes before us.
+    It eluded us then, but that’s no matter — tomorrow we will run faster, stretch our arms further...
+    And one fine morning — So we beat on, boats against the current, borne back ceaselessly into the past.
+    <i class="fa fa-quote-right fa-2x fa-pull-right"></i>
+</div>
+
+<h4>Bordered</h4>
+<div>
+    <i class="fa fa-arrow-right fa-2x fa-pull-right fa-border"></i>
+    Gatsby believed in the green light, the orgastic future that year by year recedes before us.
+    It eluded us then, but that’s no matter — tomorrow we will run faster, stretch our arms further...
+    And one fine morning — So we beat on, boats against the current, borne back ceaselessly into the past.
+</div>
+
+<h4>Stacking</h4>
+<div>
+      <span class="fa-stack fa-2x">
+        <i class="fa fa-square fa-stack-2x"></i>
+        <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+      </span>
+    <span class="fa-stack fa-2x">
+        <i class="fa fa-circle fa-stack-2x"></i>
+        <i class="fa fa-flag fa-stack-1x fa-inverse"></i>
+      </span>
+    <span class="fa-stack fa-2x">
+        <i class="fa fa-square fa-stack-2x"></i>
+        <i class="fa fa-terminal fa-stack-1x fa-inverse"></i>
+      </span>
+    <span class="fa-stack fa-4x">
+        <i class="fa fa-square fa-stack-2x"></i>
+        <i class="fa fa-terminal fa-stack-1x fa-inverse"></i>
+      </span>
+    <span class="fa-stack fa-2x">
+        <i class="fa fa-camera fa-stack-1x"></i>
+        <i class="fa fa-ban fa-stack-2x" style="color:Tomato"></i>
+      </span>
+</div>
+<h4>Stacking Text and Icons</h4>
+<div class="fa-2x">
+    <!-- Stacking different size icons -->
+    <i class="fa fa-circle-o fa-2x"></i>
+    <span class="fa-stack" style="vertical-align: top;">
+          <i class="fa fa-circle-o fa-stack-2x"></i>
+          <i class="fa fa-flag fa-stack-1x"></i>
+        </span>
+    <span class="fa-stack" style="vertical-align: top;">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-flag fa-stack-1x fa-inverse"></i>
+        </span>
+    <i class="fa fa-circle fa-2x"></i>
+    <!-- Stacking same size icons -->
+    <span class="fa-stack" style="vertical-align: top;">
+            <i class="fa fa-fw fa-dot-circle-o fa-stack-2x text-danger"></i>
+            <i class="fa fa-fw fa-circle-o fa-stack-2x text-info"></i>
+        </span>
+    <!-- Stacking text and icon -->
+    <span class="fa-stack" style="vertical-align: top;">
+            <i class="fa fa-calendar-o fa-stack-2x text-info"></i>
+            <strong class="fa-stack-1x calendar-text">27</strong>
+        </span>
+    <span class="fa-stack" style="vertical-align: top;">
+            <i class="fa fa-comment fa-stack-2x text-info"></i>
+            <strong class="fa-stack-1x fa-stack-text fa-inverse">5</strong>
+        </span>
+    <span class="fa-stack" style="vertical-align: top;">
+            <i class="fa fa-file-o fa-stack-2x text-info"></i>
+            <strong class="fa-stack-1x fa-stack-text file-text">16</strong>
+        </span>
+    <span class="fa-stack" style="vertical-align: top;">
+            <span class="fa-stack-1x filetype-text text-danger">PSD</span>
+            <i class="fa fa-file-o fa-stack-2x text-info"></i>
+        </span>
+</div>
+<h4>Accessibility</h4>
+<div>
+    <i class="fa fa-twitter fa-3x" title="Click here to go to your Twitter account"></i>
+    <i class="fa fa-facebook-square fa-3x" aria-hidden="true" title="Click here to go to your FaceBook account"></i>
+    <i class="fa fa-github fa-3x"></i>
+    <span class="sr-only">Screen reader will read out loud that this is GitHub</span>
+    <i class="fa fa-gitlab fa-3x" aria-hidden="true"></i>
+    <span class="sr-only">Screen reader will read out loud that this is GitLab</span>
+</div>
+</body>
+</html>

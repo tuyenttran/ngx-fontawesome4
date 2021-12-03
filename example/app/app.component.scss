@@ -1,4 +1,4 @@
-.rose-background {
+.rose-bg {
     background: MistyRose;
 }
 
@@ -6,10 +6,32 @@
     color: Tomato !important;
 }
 
-.lightblue-background {
+.lightblue-bg {
     background: SkyBlue;
 }
 
-.darkblue-background {
+.darkblue-bg {
     background: DodgerBlue;
+}
+
+.text-info {
+    color: #31708f;
+}
+
+.text-danger {
+    color: #a94442;
+}
+
+.calendar-text {
+    margin-top: .3em;
+}
+
+.file-text {
+    margin-top: .2em;
+}
+
+.filetype-text {
+    font-size: .7em;
+    font-weight: 700;
+    font-family: 'Oswald';
 }

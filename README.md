@@ -174,7 +174,7 @@ NPM Version will be used to identify
 <li>the version of the library (Minor Version number)</li>
 
 
-####For example:
+### For example:
 
 Version   | Angular Version    | Library version
 ---       | ---                | ---
